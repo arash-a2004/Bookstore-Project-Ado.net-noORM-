@@ -11,14 +11,19 @@ namespace CookStore.Services
     {
         public List<Book> GetListOfBooks();
         public List<Category> GetListOfCategoriesByBookId(int BookId);
+        public Category GetListOfCategoriesByCategoryId(int CategoryId);
+        public List<Category> GetListOfCategories();
         public OrderDetail GetOrderDetails(string Query);
-        public Cart GetCartDetails(string Query);
         public List<OrderDetail> GetListOfOrders(string Query);
         public int InsertMultipleRecords(Book book,List<BookCategory> bookCategories);
-        public Store GetStoreById(string Query);
+        public Store GetStoreById(int id);
         public List<Store> GetListOfStores(string Query);
         public Book GetBookById(int bookId);
         public int DMLTranaction(string Query);
+        public List<BookAuthor> GetListOfBookAuthor();
+        public BookAuthor GetBookAuthorById(int id);
+        //Cart Details
+        public List<Cart> GetCartDetailsByUserId(int userId);
 
 
     }

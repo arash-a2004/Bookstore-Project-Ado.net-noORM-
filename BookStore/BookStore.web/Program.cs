@@ -1,3 +1,6 @@
+using BookStore.Services;
+using CookStore.Services;
+
 namespace BookStore.web
 {
     public class Program
@@ -8,6 +11,7 @@ namespace BookStore.web
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddTransient<IBookStoreService, BookStoreServices>();
 
             var app = builder.Build();
 

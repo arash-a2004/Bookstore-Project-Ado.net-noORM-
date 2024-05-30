@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mjf44X8ONdIwpEuwsQU/RKj5Jue6mpv5ebQQ+tO2Ae59QYCQlh8rzK9axi30FbUJ/Z+JS8ids4iaonDNS/yZaQ==",
+  "dgSpecHash": "1NN0a92mBcc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\AsusIran\\Desktop\\Returant-project\\New folder\\New project\\ASP.NET-CORE-WITH-ADO-.NET-\\BookStore\\CookStore.Services\\CookStore.Services.csproj",
+  "projectFilePath": "C:\\Users\\AsusIran\\Desktop\\Returant-project\\New folder\\New project\\ASP.NET-CORE-WITH-ADO-.NET-\\BookStore\\CookStore.Services\\BookStore.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AsusIran\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\AsusIran\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",

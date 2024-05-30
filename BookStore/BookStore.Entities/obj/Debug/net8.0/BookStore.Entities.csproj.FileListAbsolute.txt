@@ -1,0 +1,13 @@
+C:\Users\AsusIran\Desktop\Returant-project\New folder\New project\ASP.NET-CORE-WITH-ADO-.NET-\BookStore\BookStore.Entities\bin\Debug\net8.0\BookStore.Entities.deps.json
+C:\Users\AsusIran\Desktop\Returant-project\New folder\New project\ASP.NET-CORE-WITH-ADO-.NET-\BookStore\BookStore.Entities\bin\Debug\net8.0\BookStore.Entities.dll
+C:\Users\AsusIran\Desktop\Returant-project\New folder\New project\ASP.NET-CORE-WITH-ADO-.NET-\BookStore\BookStore.Entities\bin\Debug\net8.0\BookStore.Entities.pdb
+C:\Users\AsusIran\Desktop\Returant-project\New folder\New project\ASP.NET-CORE-WITH-ADO-.NET-\BookStore\BookStore.Entities\obj\Debug\net8.0\BookStore.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AsusIran\Desktop\Returant-project\New folder\New project\ASP.NET-CORE-WITH-ADO-.NET-\BookStore\BookStore.Entities\obj\Debug\net8.0\BookStore.Entities.AssemblyInfoInputs.cache
+C:\Users\AsusIran\Desktop\Returant-project\New folder\New project\ASP.NET-CORE-WITH-ADO-.NET-\BookStore\BookStore.Entities\obj\Debug\net8.0\BookStore.Entities.AssemblyInfo.cs
+C:\Users\AsusIran\Desktop\Returant-project\New folder\New project\ASP.NET-CORE-WITH-ADO-.NET-\BookStore\BookStore.Entities\obj\Debug\net8.0\BookStore.Entities.csproj.CoreCompileInputs.cache
+C:\Users\AsusIran\Desktop\Returant-project\New folder\New project\ASP.NET-CORE-WITH-ADO-.NET-\BookStore\BookStore.Entities\obj\Debug\net8.0\BookStore.Entities.sourcelink.json
+C:\Users\AsusIran\Desktop\Returant-project\New folder\New project\ASP.NET-CORE-WITH-ADO-.NET-\BookStore\BookStore.Entities\obj\Debug\net8.0\BookStore.Entities.dll
+C:\Users\AsusIran\Desktop\Returant-project\New folder\New project\ASP.NET-CORE-WITH-ADO-.NET-\BookStore\BookStore.Entities\obj\Debug\net8.0\refint\BookStore.Entities.dll
+C:\Users\AsusIran\Desktop\Returant-project\New folder\New project\ASP.NET-CORE-WITH-ADO-.NET-\BookStore\BookStore.Entities\obj\Debug\net8.0\BookStore.Entities.pdb
+C:\Users\AsusIran\Desktop\Returant-project\New folder\New project\ASP.NET-CORE-WITH-ADO-.NET-\BookStore\BookStore.Entities\obj\Debug\net8.0\ref\BookStore.Entities.dll
+C:\Users\AsusIran\Desktop\Returant-project\New folder\New project\ASP.NET-CORE-WITH-ADO-.NET-\BookStore\BookStore.Entities\obj\Debug\net8.0\BookStore.Entities.csproj.AssemblyReference.cache

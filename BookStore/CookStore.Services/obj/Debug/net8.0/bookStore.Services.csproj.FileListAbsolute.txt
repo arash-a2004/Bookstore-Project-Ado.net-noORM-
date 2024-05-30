@@ -1,0 +1,16 @@
+C:\Users\AsusIran\Desktop\Returant-project\New folder\New project\ASP.NET-CORE-WITH-ADO-.NET-\BookStore\CookStore.Services\bin\Debug\net8.0\bookStore.Services.deps.json
+C:\Users\AsusIran\Desktop\Returant-project\New folder\New project\ASP.NET-CORE-WITH-ADO-.NET-\BookStore\CookStore.Services\bin\Debug\net8.0\bookStore.Services.dll
+C:\Users\AsusIran\Desktop\Returant-project\New folder\New project\ASP.NET-CORE-WITH-ADO-.NET-\BookStore\CookStore.Services\bin\Debug\net8.0\bookStore.Services.pdb
+C:\Users\AsusIran\Desktop\Returant-project\New folder\New project\ASP.NET-CORE-WITH-ADO-.NET-\BookStore\CookStore.Services\bin\Debug\net8.0\BookStore.Entities.dll
+C:\Users\AsusIran\Desktop\Returant-project\New folder\New project\ASP.NET-CORE-WITH-ADO-.NET-\BookStore\CookStore.Services\bin\Debug\net8.0\BookStore.Entities.pdb
+C:\Users\AsusIran\Desktop\Returant-project\New folder\New project\ASP.NET-CORE-WITH-ADO-.NET-\BookStore\CookStore.Services\obj\Debug\net8.0\bookStore.Services.csproj.AssemblyReference.cache
+C:\Users\AsusIran\Desktop\Returant-project\New folder\New project\ASP.NET-CORE-WITH-ADO-.NET-\BookStore\CookStore.Services\obj\Debug\net8.0\bookStore.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AsusIran\Desktop\Returant-project\New folder\New project\ASP.NET-CORE-WITH-ADO-.NET-\BookStore\CookStore.Services\obj\Debug\net8.0\bookStore.Services.AssemblyInfoInputs.cache
+C:\Users\AsusIran\Desktop\Returant-project\New folder\New project\ASP.NET-CORE-WITH-ADO-.NET-\BookStore\CookStore.Services\obj\Debug\net8.0\bookStore.Services.AssemblyInfo.cs
+C:\Users\AsusIran\Desktop\Returant-project\New folder\New project\ASP.NET-CORE-WITH-ADO-.NET-\BookStore\CookStore.Services\obj\Debug\net8.0\bookStore.Services.csproj.CoreCompileInputs.cache
+C:\Users\AsusIran\Desktop\Returant-project\New folder\New project\ASP.NET-CORE-WITH-ADO-.NET-\BookStore\CookStore.Services\obj\Debug\net8.0\bookStore.Services.sourcelink.json
+C:\Users\AsusIran\Desktop\Returant-project\New folder\New project\ASP.NET-CORE-WITH-ADO-.NET-\BookStore\CookStore.Services\obj\Debug\net8.0\bookStore.Services.dll
+C:\Users\AsusIran\Desktop\Returant-project\New folder\New project\ASP.NET-CORE-WITH-ADO-.NET-\BookStore\CookStore.Services\obj\Debug\net8.0\refint\bookStore.Services.dll
+C:\Users\AsusIran\Desktop\Returant-project\New folder\New project\ASP.NET-CORE-WITH-ADO-.NET-\BookStore\CookStore.Services\obj\Debug\net8.0\bookStore.Services.pdb
+C:\Users\AsusIran\Desktop\Returant-project\New folder\New project\ASP.NET-CORE-WITH-ADO-.NET-\BookStore\CookStore.Services\obj\Debug\net8.0\ref\bookStore.Services.dll
+C:\Users\AsusIran\Desktop\Returant-project\New folder\New project\ASP.NET-CORE-WITH-ADO-.NET-\BookStore\CookStore.Services\obj\Debug\net8.0\BookStor.90BE2F67.Up2Date
