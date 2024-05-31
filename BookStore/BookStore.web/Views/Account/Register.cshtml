@@ -1,0 +1,67 @@
+﻿@using BookStore.Entities
+@model AuthenticatedUser
+@{
+    ViewData["Title"] = "Register";
+}
+
+<form asp-action="Register" method="post">
+    <div class="container vh-100">
+        <div class="row justify-content-center align-items-center h-100">
+            <div class="col-md-6">
+                <h2 class="text-center mb-4"> Register </h2>
+                <form id="RegistrationForm">
+                    <div class="mb-3">
+                        <div class="input-group">
+                            <span class="input-group-text"> <i class="bi bi-person-fill"></i></span>
+                            <input asp-for="Name" type="text" class="form-control" id="Name" placeholder="Name" required />
+                            <span asp-validation-for="Name" class="text-danger" />
+
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="input-group">
+                            <span class="input-group-text"> <i class="bi bi-person-fill"></i></span>
+                            <input asp-for="UserName" type="text" class="form-control" id="UserName" placeholder="UserName" required />
+                            <span asp-validation-for="UserName" class="text-danger" />
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="input-group">
+                            <span class="input-group-text"> <i class="bi bi-person-fill"></i></span>
+                            <input asp-for="Email" type="text" class="form-control" id="Email" placeholder="Email" required />
+                            <span asp-validation-for="Email" class="text-danger" />
+
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="input-group">
+                            <span class="input-group-text"> <i class="bi bi-person-fill"></i></span>
+                            <input asp-for="ContactNumber" type="text" class="form-control" id="Contact" placeholder="Contact" required />
+                            <span asp-validation-for="ContactNumber" class="text-danger" />
+
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="input-group">
+                            <span class="input-group-text"> <i class="bi bi-person-fill"></i>Address</span>
+                            <input asp-for="Address" type="text" class="form-control" id="Adress" placeholder="Address" required />
+                            <span asp-validation-for="Address" class="text-danger" />
+
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="input-group">
+                            <span class="input-group-text"> <i class="bi bi-person-fill"></i></span>
+                            <input asp-for="Password" type="text" class="form-control" id="Password" placeholder="Password" required />
+                            <span asp-validation-for="Password" class="text-danger" />
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Regiter</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</form>
+@section scripts{
+    <partial name="_ValidationScriptsPartial"/>
+}

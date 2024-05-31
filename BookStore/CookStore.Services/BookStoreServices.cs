@@ -200,7 +200,7 @@ namespace BookStore.Services
 
         //Orders
         //finish
-        public List<OrderDetail> GetListOfOrders(string Query)
+        public List<OrderDetail> GetListOfOrders()
         {
             List<OrderDetail> orders = new();
             using (SqlConnection connection = new SqlConnection(_connectionString))
@@ -234,8 +234,6 @@ namespace BookStore.Services
         {
             throw new NotImplementedException();
         }
-
-
 
         //finish
         public Store GetStoreById(int id)
@@ -342,5 +340,51 @@ namespace BookStore.Services
             return bookauthor;
         }
 
+        public int saveBookInCart(Cart cart)
+        {
+            int res;
+            string query = "INSERT INTO Cart(BookId, Name, Price, Quantity, TotalAmount, UserId) VALUES (@bookId, @name, @price, @quantity, @totalAmount, @userId)";
+            using (SqlConnection con = new SqlConnection(_connectionString))
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@name", cart.BookName);
+                cmd.Parameters.AddWithValue("@price", cart.Price);
+                cmd.Parameters.AddWithValue("@quantity", cart.Quantity);
+                cmd.Parameters.AddWithValue("@totalAmount", cart.TotalAmount);
+                cmd.Parameters.AddWithValue("@userId", cart.UserId);
+                cmd.Parameters.AddWithValue("@bookId", cart.BookId);
+                Console.WriteLine("connection is established");
+                res = cmd.ExecuteNonQuery();
+                con.Close();
+                return res;
+            }
+        }
+
+        public Cart GetCartById(int cartId)
+        {
+            Cart cart = new Cart();
+            string query = "SELECT * FROM [Cart] WHERE Id = @id ;";
+            using (SqlConnection con = new SqlConnection(_connectionString)) 
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@name", cartId);
+                using (SqlDataReader reader = cmd.ExecuteReader()) 
+                {
+                    while (reader.Read()) 
+                    {
+                        cart.Id = Convert.ToInt32(reader["Id"]);
+                        cart.BookName = reader["Name"].ToString();
+                        cart.BookId = Convert.ToInt32(reader["BookId"]);
+                        cart.Price = Convert.ToDecimal(reader["Price"]);
+                        cart.Quantity = Convert.ToInt32(reader["Quantity"]);
+                        cart.TotalAmount = Convert.ToDecimal(reader["TotalAmount"]);
+                        cart.UserId = Convert.ToInt32(reader["UserId"]);
+
+                    }
+                }
+            }
+        }
     }
 }

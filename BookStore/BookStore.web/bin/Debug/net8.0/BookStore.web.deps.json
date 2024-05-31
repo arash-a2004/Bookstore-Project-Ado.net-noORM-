@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "BookStore.web/1.0.0": {
         "dependencies": {
+          "BookStore.Entities": "1.0.0",
           "BookStore.Services": "1.0.0",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.2"

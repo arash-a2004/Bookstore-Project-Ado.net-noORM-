@@ -104,6 +104,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "C:\\Users\\AsusIran\\Desktop\\Returant-project\\New folder\\New project\\ASP.NET-CORE-WITH-ADO-.NET-\\BookStore\\BookStore.Entities\\BookStore.Entities.csproj": {
+                "projectPath": "C:\\Users\\AsusIran\\Desktop\\Returant-project\\New folder\\New project\\ASP.NET-CORE-WITH-ADO-.NET-\\BookStore\\BookStore.Entities\\BookStore.Entities.csproj"
+              },
               "C:\\Users\\AsusIran\\Desktop\\Returant-project\\New folder\\New project\\ASP.NET-CORE-WITH-ADO-.NET-\\BookStore\\CookStore.Services\\BookStore.Services.csproj": {
                 "projectPath": "C:\\Users\\AsusIran\\Desktop\\Returant-project\\New folder\\New project\\ASP.NET-CORE-WITH-ADO-.NET-\\BookStore\\CookStore.Services\\BookStore.Services.csproj"
               }

@@ -1,0 +1,64 @@
+﻿@using BookStore.Entities;
+@model IEnumerable<Cart>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td>
+                @Html.DisplayNameFor(Model => Model.BookName)
+            </td>
+            <td>
+                @Html.DisplayNameFor(Model => Model.Price)
+            </td>
+            <td>
+                @Html.DisplayNameFor(Model => Model.Quantity)
+            </td>
+            <td>
+                @Html.DisplayNameFor(Model => Model.TotalAmount)
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayNameFor(Model => Model.BookName)
+                </td>
+                <td>
+                    @Html.DisplayNameFor(Model => Model.Price)
+                </td>
+                <td>
+                    @Html.DisplayNameFor(Model => Model.Quantity)
+                </td>
+                <td>
+                    @Html.DisplayNameFor(Model => Model.TotalAmount)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit Qty","Edit",new {id=item.Id}) |
+                    |
+                    @Html.ActionLink("Delete Item","Delete",new {id=item.Id})
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div>
+    Grand Total: @Model.Sum(x=>x.TotalAmount)
+</div>
+@{
+    var GrandTotal = @Model.Sum(x => x.TotalAmount);
+}
+<div>
+    <form asp-action="AddressDetail" asp-controller="Carts">
+        <input type="hidden" asp-for="@GrandTotal"/>
+        <input type="submit" value="Proced To Payment" class="btn btn-primary"/>
+    </form>
+</div>
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@

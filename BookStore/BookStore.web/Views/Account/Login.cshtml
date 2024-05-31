@@ -1,0 +1,43 @@
+﻿@using BookStore.web.ViewModels
+@model LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+}
+<form asp-action="Login" method="post">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="~/RegisterCss/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Login</h1>
+            <form id="RegistrationForm">
+                <div class="mb-3">
+                    <div class="input-group">
+                        <span class="input-group-text"> <i class="bi bi-person-fill"></i></span>
+                        <input asp-for="userName" class="form-control" id="Username" placeholder="Username" required />
+                        <span asp-validation-for="userName" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="input-group">
+                        <span class="input-group-text"> <i class="bi bi-lock-fill"></i></span>
+                        <input asp-for="password" class="form-control" id="Password" placeholder="Password" required />
+                        <span asp-validation-for="password" class="text-danger"></span>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary" style="float: right; margin-right: 10px;">Login</button>
+            </form>
+        </div>
+    </body>
+</html>
+</form>
+@section scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
+

@@ -12,6 +12,15 @@ namespace BookStore.web
             // Add services to the container.
             builder.Services.AddControllersWithViews();
             builder.Services.AddTransient<IBookStoreService, BookStoreServices>();
+            builder.Services.AddTransient<IAuthentication, AuthenticationService>();
+            builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            builder.Services.AddSession(options =>
+            {
+                options.IOTimeout = TimeSpan.FromMinutes(30);
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+            });
+
 
             var app = builder.Build();
 
@@ -25,7 +34,7 @@ namespace BookStore.web
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            app.UseSession();
             app.UseRouting();
 
             app.UseAuthorization();

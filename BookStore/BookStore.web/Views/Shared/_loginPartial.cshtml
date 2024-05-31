@@ -1,0 +1,27 @@
+﻿@inject IHttpContextAccessor HttpContextAccessor
+@if (HttpContextAccessor.HttpContext.Session.GetString("userName") != null)
+{
+    <ul class="navbar-nav">
+        <li class="nav-item text-dark">
+            Welcome @HttpContextAccessor.HttpContext.Session.GetString("userName")
+        <li class="nav-item">
+            <a asp-action="Logout" class="nav-link text-dark" asp-controller="Account">Logout</a>
+        </li>
+    </ul>
+}
+else
+{
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a asp-action="Login" class="nav-link text-dark" asp-controller="Account">Login</a>
+        </li>
+        <li class="nav-item">
+            <a asp-action="Register" class="nav-link text-dark" asp-controller="Account">Register</a>
+         </li>
+    </ul>
+
+}
+
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@

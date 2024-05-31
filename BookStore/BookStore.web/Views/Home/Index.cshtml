@@ -1,4 +1,5 @@
-﻿@model IEnumerable<BookStore.Entities.Book>
+﻿@using BookStore.web.ViewModels
+@model IEnumerable<BookviewModel>
 
 @{
     ViewData["Title"] = "Index";
@@ -6,72 +7,19 @@
 
 <h1>Index</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Id)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Description)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ISBNNumber)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Price)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.BookImage)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.BookAuthorId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.BookStoreId)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ISBNNumber)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.BookImage)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.BookAuthorId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.BookStoreId)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-3">
+            <div class="card" style="width: 12rem;">
+                <img class="card-img-top" src="~/Images/@item.PictureUri" alt="card image cap" />
+                <div class="card-body">
+                    <h5 class="card-title">@item.Name</h5>
+                    <h6 class="card-title"><i class="fas fa-euro-sign">@item.Price</i></h6>
+
+                    <a asp-action="Details" asp-controller="Home" asp-route-id="@item.BookId" class="btn btn-primary">Details</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

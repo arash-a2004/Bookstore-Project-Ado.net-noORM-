@@ -14,17 +14,17 @@ namespace CookStore.Services
         public Category GetListOfCategoriesByCategoryId(int CategoryId);
         public List<Category> GetListOfCategories();
         public OrderDetail GetOrderDetails(string Query);
-        public List<OrderDetail> GetListOfOrders(string Query);
+        public List<OrderDetail> GetListOfOrders();
         public int InsertMultipleRecords(Book book,List<BookCategory> bookCategories);
         public Store GetStoreById(int id);
-        public List<Store> GetListOfStores(string Query);
+        public List<Store> GetListOfStores();
         public Book GetBookById(int bookId);
         public int DMLTranaction(string Query);
         public List<BookAuthor> GetListOfBookAuthor();
         public BookAuthor GetBookAuthorById(int id);
         //Cart Details
         public List<Cart> GetCartDetailsByUserId(int userId);
-
-
+        public int saveBookInCart(Cart cart);
+        public Cart GetCartById(int cartId);
     }
 }
