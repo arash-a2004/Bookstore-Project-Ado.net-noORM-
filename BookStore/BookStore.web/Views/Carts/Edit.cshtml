@@ -1,0 +1,84 @@
+﻿@* @using BookStore.Entities
+@model Cart
+@{
+    ViewData["Title"] = "Edit";
+}
+<h1>Edit Quantity</h1>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"> </div>
+            <div class="form-group">
+                <label asp-for="BookName" class="control-label">
+                        @Model.BookName
+                </label>
+                <span asp-validation-for="BookName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label">
+                    @Model.Price
+                </label>
+                <input type="hidden" asp-for="@Model.Price"/>
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Quantity" class="control-label">
+                    @Model.Quantity
+                </label>
+                <input type="hidden" asp-for="@Model.Quantity" />
+                <span asp-validation-for="Quantity" class="text-danger"></span>
+                <div class="form-group">
+                    <input type="submit" value="Update" class="btn btn-primary"/>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div>
+    <a asp-action="Index">Back to list of books</a>
+</div>
+ *@
+@using BookStore.Entities
+@model Cart
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit Quantity</h1>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"> </div>
+            <div class="form-group">
+                <label asp-for="BookName" style="display: block; font-weight: bold;">
+                    @Model.BookName
+                </label>
+                <span asp-validation-for="BookName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="hidden" asp-for="Id"/>
+                <label asp-for="Price" style="display: block; font-weight: bold;">
+                    @Model.Price
+                </label>
+                <input type="hidden" asp-for="@Model.Price" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Quantity" style="display: block; font-weight: bold;">
+                    @Model.Quantity
+                </label>
+                <input type="number" asp-for="@Model.Quantity" />
+                <span asp-validation-for="Quantity" class="text-danger"></span>
+                <div class="form-group">
+                    <input type="submit" value="Update" class="btn btn-primary" />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div>
+    <a asp-action="Index">Back to list of books</a>
+</div>
+@*
+  For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@

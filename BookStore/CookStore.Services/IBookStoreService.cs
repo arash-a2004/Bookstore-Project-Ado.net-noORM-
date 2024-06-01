@@ -26,5 +26,7 @@ namespace CookStore.Services
         public List<Cart> GetCartDetailsByUserId(int userId);
         public int saveBookInCart(Cart cart);
         public Cart GetCartById(int cartId);
+        public int UpdateCart(int cartId,decimal totalAmount, int quantity);
+        public int DeleteCartByUserId(int cartId);
     }
 }

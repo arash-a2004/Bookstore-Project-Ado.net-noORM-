@@ -5,6 +5,22 @@
       "PackagePath": "staticwebassets\\BookStore.web.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\AsusIran\\Desktop\\Returant-project\\New folder\\New project\\ASP.NET-CORE-WITH-ADO-.NET-\\BookStore\\BookStore.web\\wwwroot\\Images\\1.jpg",
+      "PackagePath": "staticwebassets\\Images\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\AsusIran\\Desktop\\Returant-project\\New folder\\New project\\ASP.NET-CORE-WITH-ADO-.NET-\\BookStore\\BookStore.web\\wwwroot\\Images\\2.jpg",
+      "PackagePath": "staticwebassets\\Images\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\AsusIran\\Desktop\\Returant-project\\New folder\\New project\\ASP.NET-CORE-WITH-ADO-.NET-\\BookStore\\BookStore.web\\wwwroot\\Images\\3.jpg",
+      "PackagePath": "staticwebassets\\Images\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\AsusIran\\Desktop\\Returant-project\\New folder\\New project\\ASP.NET-CORE-WITH-ADO-.NET-\\BookStore\\BookStore.web\\wwwroot\\Images\\4.jpg",
+      "PackagePath": "staticwebassets\\Images\\4.jpg"
+    },
+    {
       "Id": "C:\\Users\\AsusIran\\Desktop\\Returant-project\\New folder\\New project\\ASP.NET-CORE-WITH-ADO-.NET-\\BookStore\\BookStore.web\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

@@ -369,7 +369,7 @@ namespace BookStore.Services
             {
                 con.Open();
                 SqlCommand cmd = new SqlCommand(query, con);
-                cmd.Parameters.AddWithValue("@name", cartId);
+                cmd.Parameters.AddWithValue("@id", cartId);
                 using (SqlDataReader reader = cmd.ExecuteReader()) 
                 {
                     while (reader.Read()) 
@@ -384,7 +384,43 @@ namespace BookStore.Services
 
                     }
                 }
+                con.Close();
             }
+            return cart;
+        }
+
+        public int UpdateCart(int cartId, decimal totalAmount, int quantity)
+        {
+            using (SqlConnection con = new SqlConnection(_connectionString)) 
+            {
+                con.Open();
+                string query = "UPDATE [Cart] SET Quantity=@quantity ,TotalAmount=@totalAmount WHERE Id = @id ;";
+                using(SqlCommand cmd = new SqlCommand(query, con))
+                {
+                    cmd.Parameters.AddWithValue("@quantity", quantity);
+                    cmd.Parameters.AddWithValue("@totalAmount", totalAmount);
+                    cmd.Parameters.AddWithValue("@id", cartId);
+                    int res = cmd.ExecuteNonQuery();
+                    con.Close();
+                    return res;
+                }
+            }   
+        }
+
+        public int DeleteCartByUserId(int cartId)
+        {
+            using (SqlConnection con = new SqlConnection(_connectionString))
+            {
+                con.Open();
+                string query = "DELETE FROM [Cart] WHERE Id = @id ;";
+                using (SqlCommand cmd = new SqlCommand(query, con))
+                {
+                    cmd.Parameters.AddWithValue("@id", cartId);
+                    int res = cmd.ExecuteNonQuery();
+                    con.Close();
+                    return res;
+                }
+            }   
         }
     }
 }

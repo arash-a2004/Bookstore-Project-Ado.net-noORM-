@@ -1,4 +1,5 @@
-﻿using BookStore.web.Filters;
+﻿using BookStore.Entities;
+using BookStore.web.Filters;
 using CookStore.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -23,6 +24,27 @@ namespace BookStore.web.Controllers
         {
             var cart = _bookStoreService.GetCartById(id);
             return View(cart);
+        }
+        [HttpPost]
+        public IActionResult Edit(Cart cart)
+        {
+            var totalAmount = (cart.TotalAmount) * (cart.Price);
+            int res = _bookStoreService.UpdateCart(cart.Id,totalAmount ,cart.Quantity);
+            if(res > 0)
+            {
+                return RedirectToAction("Index");
+            }
+            return RedirectToAction("Index");
+        }
+        [HttpPost]
+        public IActionResult Delete(Cart cart)
+        {
+            int result = _bookStoreService.DeleteCartByUserId(cart.Id);
+            if (result > 0) 
+            {
+                return RedirectToAction("Index");
+            }
+            return RedirectToAction("Index");
         }
     }
 }

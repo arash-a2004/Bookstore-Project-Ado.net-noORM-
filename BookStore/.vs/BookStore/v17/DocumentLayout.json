@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\AsusIran\\Desktop\\Returant-project\\New folder\\New project\\ASP.NET-CORE-WITH-ADO-.NET-\\BookStore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{31EABD92-CDDF-4A48-A8A7-F79D75FBDA05}|BookStore.web\\BookStore.web.csproj|c:\\users\\asusiran\\desktop\\returant-project\\new folder\\new project\\asp.net-core-with-ado-.net-\\bookstore\\bookstore.web\\controllers\\cartscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31EABD92-CDDF-4A48-A8A7-F79D75FBDA05}|BookStore.web\\BookStore.web.csproj|solutionrelative:bookstore.web\\controllers\\cartscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{889C3ACB-5159-49C2-ACFC-CE9F31809362}|CookStore.Services\\BookStore.Services.csproj|c:\\users\\asusiran\\desktop\\returant-project\\new folder\\new project\\asp.net-core-with-ado-.net-\\bookstore\\cookstore.services\\bookstoreservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{889C3ACB-5159-49C2-ACFC-CE9F31809362}|CookStore.Services\\BookStore.Services.csproj|solutionrelative:cookstore.services\\bookstoreservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{889C3ACB-5159-49C2-ACFC-CE9F31809362}|CookStore.Services\\BookStore.Services.csproj|c:\\users\\asusiran\\desktop\\returant-project\\new folder\\new project\\asp.net-core-with-ado-.net-\\bookstore\\cookstore.services\\ibookstoreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{889C3ACB-5159-49C2-ACFC-CE9F31809362}|CookStore.Services\\BookStore.Services.csproj|solutionrelative:cookstore.services\\ibookstoreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{30C9BB6D-6D0E-4E2F-9202-8861629B2F20}|BookStore.Entities\\BookStore.Entities.csproj|c:\\users\\asusiran\\desktop\\returant-project\\new folder\\new project\\asp.net-core-with-ado-.net-\\bookstore\\bookstore.entities\\authenticateduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30C9BB6D-6D0E-4E2F-9202-8861629B2F20}|BookStore.Entities\\BookStore.Entities.csproj|solutionrelative:bookstore.entities\\authenticateduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30C9BB6D-6D0E-4E2F-9202-8861629B2F20}|BookStore.Entities\\BookStore.Entities.csproj|c:\\users\\asusiran\\desktop\\returant-project\\new folder\\new project\\asp.net-core-with-ado-.net-\\bookstore\\bookstore.entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30C9BB6D-6D0E-4E2F-9202-8861629B2F20}|BookStore.Entities\\BookStore.Entities.csproj|solutionrelative:bookstore.entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{889C3ACB-5159-49C2-ACFC-CE9F31809362}|CookStore.Services\\BookStore.Services.csproj|c:\\users\\asusiran\\desktop\\returant-project\\new folder\\new project\\asp.net-core-with-ado-.net-\\bookstore\\cookstore.services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{889C3ACB-5159-49C2-ACFC-CE9F31809362}|CookStore.Services\\BookStore.Services.csproj|solutionrelative:cookstore.services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,39 +38,54 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\AsusIran\\Desktop\\Returant-project\\New folder\\New project\\ASP.NET-CORE-WITH-ADO-.NET-\\BookStore\\BookStore.Entities\\Book.cs",
+              "RelativeDocumentMoniker": "BookStore.Entities\\Book.cs",
+              "ToolTip": "C:\\Users\\AsusIran\\Desktop\\Returant-project\\New folder\\New project\\ASP.NET-CORE-WITH-ADO-.NET-\\BookStore\\BookStore.Entities\\Book.cs",
+              "RelativeToolTip": "BookStore.Entities\\Book.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T10:28:53.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "AuthenticatedUser.cs",
+              "DocumentMoniker": "C:\\Users\\AsusIran\\Desktop\\Returant-project\\New folder\\New project\\ASP.NET-CORE-WITH-ADO-.NET-\\BookStore\\BookStore.Entities\\AuthenticatedUser.cs",
+              "RelativeDocumentMoniker": "BookStore.Entities\\AuthenticatedUser.cs",
+              "ToolTip": "C:\\Users\\AsusIran\\Desktop\\Returant-project\\New folder\\New project\\ASP.NET-CORE-WITH-ADO-.NET-\\BookStore\\BookStore.Entities\\AuthenticatedUser.cs",
+              "RelativeToolTip": "BookStore.Entities\\AuthenticatedUser.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T10:28:52.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthenticationService.cs",
+              "DocumentMoniker": "C:\\Users\\AsusIran\\Desktop\\Returant-project\\New folder\\New project\\ASP.NET-CORE-WITH-ADO-.NET-\\BookStore\\CookStore.Services\\AuthenticationService.cs",
+              "RelativeDocumentMoniker": "CookStore.Services\\AuthenticationService.cs",
+              "ToolTip": "C:\\Users\\AsusIran\\Desktop\\Returant-project\\New folder\\New project\\ASP.NET-CORE-WITH-ADO-.NET-\\BookStore\\CookStore.Services\\AuthenticationService.cs",
+              "RelativeToolTip": "CookStore.Services\\AuthenticationService.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwBcAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T10:23:08.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "BookStoreServices.cs",
               "DocumentMoniker": "C:\\Users\\AsusIran\\Desktop\\Returant-project\\New folder\\New project\\ASP.NET-CORE-WITH-ADO-.NET-\\BookStore\\CookStore.Services\\BookStoreServices.cs",
               "RelativeDocumentMoniker": "CookStore.Services\\BookStoreServices.cs",
               "ToolTip": "C:\\Users\\AsusIran\\Desktop\\Returant-project\\New folder\\New project\\ASP.NET-CORE-WITH-ADO-.NET-\\BookStore\\CookStore.Services\\BookStoreServices.cs",
               "RelativeToolTip": "CookStore.Services\\BookStoreServices.cs",
-              "ViewState": "AQIAAFsBAAAAAAAAAAAiwH4BAABEAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAYwCMAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T21:35:47.758Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IBookStoreService.cs",
-              "DocumentMoniker": "C:\\Users\\AsusIran\\Desktop\\Returant-project\\New folder\\New project\\ASP.NET-CORE-WITH-ADO-.NET-\\BookStore\\CookStore.Services\\IBookStoreService.cs",
-              "RelativeDocumentMoniker": "CookStore.Services\\IBookStoreService.cs",
-              "ToolTip": "C:\\Users\\AsusIran\\Desktop\\Returant-project\\New folder\\New project\\ASP.NET-CORE-WITH-ADO-.NET-\\BookStore\\CookStore.Services\\IBookStoreService.cs",
-              "RelativeToolTip": "CookStore.Services\\IBookStoreService.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAA1wBsAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T21:35:25.494Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CartsController.cs",
-              "DocumentMoniker": "C:\\Users\\AsusIran\\Desktop\\Returant-project\\New folder\\New project\\ASP.NET-CORE-WITH-ADO-.NET-\\BookStore\\BookStore.web\\Controllers\\CartsController.cs",
-              "RelativeDocumentMoniker": "BookStore.web\\Controllers\\CartsController.cs",
-              "ToolTip": "C:\\Users\\AsusIran\\Desktop\\Returant-project\\New folder\\New project\\ASP.NET-CORE-WITH-ADO-.NET-\\BookStore\\BookStore.web\\Controllers\\CartsController.cs",
-              "RelativeToolTip": "BookStore.web\\Controllers\\CartsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T21:33:07.998Z",
+              "WhenOpened": "2024-06-01T10:22:18.606Z",
               "EditorCaption": ""
             }
           ]

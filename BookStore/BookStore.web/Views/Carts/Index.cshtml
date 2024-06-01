@@ -26,21 +26,20 @@
         {
             <tr>
                 <td>
-                    @Html.DisplayNameFor(Model => Model.BookName)
+                    @item.BookName
                 </td>
                 <td>
-                    @Html.DisplayNameFor(Model => Model.Price)
+                    @item.Price
                 </td>
                 <td>
-                    @Html.DisplayNameFor(Model => Model.Quantity)
+                    @item.Quantity
                 </td>
                 <td>
-                    @Html.DisplayNameFor(Model => Model.TotalAmount)
+                    @item.TotalAmount
                 </td>
                 <td>
-                    @Html.ActionLink("Edit Qty","Edit",new {id=item.Id}) |
-                    |
-                    @Html.ActionLink("Delete Item","Delete",new {id=item.Id})
+                    @Html.ActionLink("Edit Qty", "Edit", new { id = item.Id }) |
+                    @Html.ActionLink("Delete Item", "Delete", new { id = item.Id })
 
                 </td>
             </tr>
@@ -62,3 +61,73 @@
 @*
     For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 *@
+@* @using BookStore.Entities;
+@model IEnumerable<Cart>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td>
+                @Html.DisplayNameFor(Model => Model.First().BookName)
+            </td>
+            <td>
+                @Html.DisplayNameFor(Model => Model.First().Price)
+            </td>
+            <td>
+                @Html.DisplayNameFor(Model => Model.First().Quantity)
+            </td>
+            <td>
+                @Html.DisplayNameFor(Model => Model.First().TotalAmount)
+            </td>
+            <td>
+                @Html.DisplayNameFor(Model => Model.TotalAmount)
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Any())
+        {
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.BookName
+                    </td>
+                    <td>
+                        @item.Price
+                    </td>
+                    <td>
+                        @item.Quantity
+                    </td>
+                    <td>
+                        @item.TotalAmount
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit Qty", "Edit", new { id = item.Id }) |
+                        @Html.ActionLink("Delete Item", "Delete", new { id = item.Id })
+
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="5">Your cart is empty!</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div>
+    Grand Total: @Model.Sum(x => x.TotalAmount)
+</div>
+
+<div>
+    <form asp-action="AddressDetail" asp-controller="Carts">
+        <input type="hidden" asp-for="@Model.Sum(x => x.TotalAmount)" />  <input type="submit" value="Proced To Payment" class="btn btn-primary" />
+    </form>
+</div>
+ *@
